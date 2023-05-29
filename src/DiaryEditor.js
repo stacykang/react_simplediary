@@ -28,6 +28,7 @@ const DiaryEditor = () => {
         <div className="DiaryEditor">
             <h2>오늘의 일기</h2>
             <div>
+                <p>작성자</p>
                 <input
                     name="author"
                     type="text"
@@ -36,13 +37,16 @@ const DiaryEditor = () => {
                 />
             </div>
             <div>
+                <p>내용</p>
                 <textarea
                     name="content"
                     value={state.content}
+                    rows="8"
                     onChange={handleChangeState}
                 />
             </div>
             <div>
+                <span>오늘의 감정점수</span>
                 <select
                     name="emotion"
                     value={state.emotion}

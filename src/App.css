@@ -1,38 +1,56 @@
-.App {
-  text-align: center;
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.DiaryEditor {
+  margin: 4rem auto;
+  padding: 2rem 1.5rem 1rem;
+  border: 1px solid #eee;
+  background: #fafafa;
+  width: calc(100% - 2rem);
+  max-width: 360px;
+  border-radius: 1rem;
+  -webkit-border-radius: 1rem;
+  -moz-border-radius: 1rem;
+  -ms-border-radius: 1rem;
+  -o-border-radius: 1rem;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.DiaryEditor div {
+  margin-top: 1rem;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.DiaryEditor input,
+.DiaryEditor textarea,
+.DiaryEditor select,
+.DiaryEditor button {
+  border: 1px solid #eee;
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+  -webkit-border-radius: 0.5rem;
+  -moz-border-radius: 0.5rem;
+  -ms-border-radius: 0.5rem;
+  -o-border-radius: 0.5rem;
 }
-
-.App-link {
-  color: #61dafb;
+.DiaryEditor input,
+.DiaryEditor textarea {
+  width: 100%;
+  margin-top: 0.5rem;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.DiaryEditor input {
+  height: 2rem;
 }
+.DiaryEditor textarea {
+  resize: none;
+}
+.DiaryEditor button {
+  width: 100%;
+  padding: 0.5em;
+  background: #aaa;
+  color: #fff;
+  border: 0;
+  font-size: 1rem;
+  cursor: pointer;
+}/*# sourceMappingURL=App.css.map */

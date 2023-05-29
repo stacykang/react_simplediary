@@ -1,0 +1,56 @@
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.DiaryEditor {
+    margin: 4rem auto;
+    padding: 2rem 1.5rem 1rem;
+    border: 1px solid #eee;
+    background: #fafafa;
+    width: calc(100% - 2rem);
+    max-width: 360px;
+    border-radius: 1rem;
+    -webkit-border-radius: 1rem;
+    -moz-border-radius: 1rem;
+    -ms-border-radius: 1rem;
+    -o-border-radius: 1rem;
+    div {
+        margin-top: 1rem;
+    }
+    input,
+    textarea,
+    select,
+    button {
+        border: 1px solid #eee;
+        padding: 0.5rem;
+        border-radius: 0.5rem;
+        -webkit-border-radius: 0.5rem;
+        -moz-border-radius: 0.5rem;
+        -ms-border-radius: 0.5rem;
+        -o-border-radius: 0.5rem;
+    }
+    input,
+    textarea {
+        width: 100%;
+        margin-top: 0.5rem;
+    }
+    input {
+        height: 2rem;
+    }
+    textarea {
+        resize: none;
+    }
+    button {
+        width: 100%;
+        padding: 0.5em;
+        background: #aaa;
+        color: #fff;
+        border: 0;
+        font-size: 1rem;
+        cursor: pointer;
+    }
+}

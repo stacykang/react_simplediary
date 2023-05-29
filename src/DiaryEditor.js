@@ -1,7 +1,8 @@
 import { useState } from "react";
 
 const DiaryEditor = () => {
-    const [author, setAuthor] = useState("강현주");
+    const [author, setAuthor] = useState("");
+    const [content, setContent] = useState("");
 
     return (
         <div className="DiaryEditor">
@@ -11,11 +12,15 @@ const DiaryEditor = () => {
                     type="text"
                     value={author}
                     onChange={(e) => {
-                        //이벤트 객체 e
-                        console.log(e);
-                        console.log(e.target);
-                        console.log(e.target.value);
                         setAuthor(e.target.value);
+                    }}
+                />
+            </div>
+            <div>
+                <textarea
+                    value={content}
+                    onChange={(e) => {
+                        setContent(e.target.value);
                     }}
                 />
             </div>

@@ -16,6 +16,11 @@ const DiaryEditor = () => {
         });
     };
 
+    const handleSubmit = () => {
+        console.log(state);
+        alert("저장 성공!😄");
+    };
+
     // const [author, setAuthor] = useState("");
     // const [content, setContent] = useState("");
 
@@ -49,6 +54,9 @@ const DiaryEditor = () => {
                     <option value={4}>4</option>
                     <option value={5}>5</option>
                 </select>
+            </div>
+            <div>
+                <button onClick={handleSubmit}>일기 저장하기</button>
             </div>
         </div>
     );

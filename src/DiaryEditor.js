@@ -4,8 +4,16 @@ const DiaryEditor = () => {
     const [state, setState] = useState({
         author: "",
         content: "",
-        author: "악",
     });
+
+    const handleChangeState = (e) => {
+        console.log(e.target.name);
+        console.log(e.target.value);
+        setState({
+            ...state,
+            [e.target.name]: e.target.value,
+        });
+    };
 
     // const [author, setAuthor] = useState("");
     // const [content, setContent] = useState("");
@@ -15,25 +23,17 @@ const DiaryEditor = () => {
             <h2>오늘의 일기</h2>
             <div>
                 <input
+                    name="author"
                     type="text"
                     value={state.author}
-                    onChange={(e) => {
-                        setState({
-                            ...state,
-                            author: e.target.value,
-                        });
-                    }}
+                    onChange={handleChangeState}
                 />
             </div>
             <div>
                 <textarea
+                    name="content"
                     value={state.content}
-                    onChange={(e) => {
-                        setState({
-                            ...state,
-                            content: e.target.value,
-                        });
-                    }}
+                    onChange={handleChangeState}
                 />
             </div>
         </div>

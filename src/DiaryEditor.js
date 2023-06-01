@@ -18,6 +18,14 @@ const DiaryEditor = () => {
 
     const handleSubmit = () => {
         console.log(state);
+        if (state.author.length < 1) {
+            alert("작성자는 최소 5글자 이상 입력해주세요.");
+            return;
+        }
+        if (state.content.length < 1) {
+            alert("일기 본문은 최소 5글자 이상 입력해주세요.");
+            return;
+        }
         alert("저장 성공!😄");
     };
 

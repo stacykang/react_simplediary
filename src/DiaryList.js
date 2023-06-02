@@ -9,7 +9,7 @@ const DiaryList = ({ diaryList }) => {
             <p>{diaryList.length}개의 일기가 있습니다.</p>
             <div>
                 {diaryList.map((item) => (
-                    <div>
+                    <div key={item.id}>
                         <div>작성자 : {item.author}</div>
                         <div>일기 : {item.content}</div>
                         <div>감정 : {item.emotion}</div>
